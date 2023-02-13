@@ -3,17 +3,20 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [📗 Table of Contents](#-table-of-contents)
+- [Blog-App ](#blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -71,6 +74,7 @@ In order to run this project you need:
 
 👤 **Abdulrahman Nganje**
 - GitHub: [@Nganje](https://github.com/asnganje)
+- - Twitter: [@asnganje](https://twitter.com/asnganje)
 - LinkedIn: [@Nganje](https://www.linkedin.com/in/abdulrahman-nganje-a6436935/)
 
 
@@ -79,10 +83,6 @@ In order to run this project you need:
 - GitHub: [@Gleennkar](https://github.com/Gleennkar)
 - Twitter: [@gleeny24](https://twitter.com/twitterhandle)
 - LinkedIn: [@gleeny](https://www.linkedin.com/in/gleeny-nkar-aa3917182)
-
-**Abdulrahman Nganje**
-- GitHub: [@Nganje](https://github.com/asnganje)
-- LinkedIn: [@Nganje](https://www.linkedin.com/in/abdulrahman-nganje-a6436935/)
 
 
 <!-- FUTURE FEATURES -->
