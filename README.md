@@ -74,7 +74,7 @@ In order to run this project you need:
 
 👤 **Abdulrahman Nganje**
 - GitHub: [@Nganje](https://github.com/asnganje)
-- - Twitter: [@asnganje](https://twitter.com/asnganje)
+- Twitter: [@asnganje](https://twitter.com/asnganje)
 - LinkedIn: [@Nganje](https://www.linkedin.com/in/abdulrahman-nganje-a6436935/)
 
 
