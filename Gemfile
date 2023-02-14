@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.3'
 # ruby '3.1.3'
+# ruby '3.1.3'
+ruby '3.0.4'
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'cancancan'
 
 gem 'devise'
 
