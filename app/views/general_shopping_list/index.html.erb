@@ -1,0 +1,40 @@
+<div class="shopping_list">
+    <h3>Shopping List</h3>
+    <div>
+      <p>
+        <span>Amount of food items to buy: </span>
+        <span>&nbsp;<%= @foods %></span>
+      </p>
+
+      <p>
+        <span>Total value of food needed:</span>
+        <span>&nbsp;<%= @total %></span>
+      </p>
+
+      <%#<p>
+        <span>Recipe: </span>
+        <span>&nbsp;%= Recipe.find_by(params[:recipe_id]).name % </span>
+      </p>%>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Food</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @missing_food.each do |food| %>
+            <tr>
+              <td><%= food[:name] %></td>
+              <td><%= food[:quantity] %></td>
+              <td><%= food[:value] %></td>
+              <td><%= button_to "Delete", food_path(food[:id]), data: {turbo_method: :delete, turbo_confirm: 'are you sure'}, method: :delete %></td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>

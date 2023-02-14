@@ -3,7 +3,7 @@ class FoodsController < ApplicationController
 
   # GET /foods or /foods.json
   def index
-    @foods = Food.all
+    @foods = current_user.foods
   end
 
   # GET /foods/1 or /foods/1.json
@@ -19,11 +19,11 @@ class FoodsController < ApplicationController
 
   # POST /foods or /foods.json
   def create
-    @food = Food.new(food_params)
+    food = current_user.foods.new(food_params)
 
     respond_to do |format|
-      if @food.save
-        format.html { redirect_to food_url(@food), notice: 'Food was successfully created.' }
+      if food.save
+        format.html { redirect_to foods_path, notice: 'Food was successfully created.' }
         format.json { render :show, status: :created, location: @food }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,6 +64,6 @@ class FoodsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def food_params
-    params.fetch(:food, {})
+    params.require(:food).permit(:name, :measurement_unit, :price, :user_id)
   end
 end
