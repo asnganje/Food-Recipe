@@ -1,8 +1,8 @@
 
 <nav>
-  <a href="/">Food recipe</a>
+  <a class="nav-a" href="/">Food Recipe</a>
   <% if user_signed_in? %>
-    <ul >
+    <ul class="nav-links">
       <li>
         <%= link_to 'Foods', foods_path %>
       </li>
