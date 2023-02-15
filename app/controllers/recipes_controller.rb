@@ -9,9 +9,9 @@ class RecipesController < ApplicationController
   # GET /recipes/1 or /recipes/1.json
   def show
     @recipe = Recipe.find_by(id: params[:id])
-    #@inventory = Inventory.find_by(id: params[:id])
-    #@inventory_food = InventoryFood.new
-    #@food = Food.new
+    # @inventory = Inventory.find_by(id: params[:id])
+    # @inventory_food = InventoryFood.new
+    # @food = Food.new
     @recipe_food = RecipeFood.new
   end
 
