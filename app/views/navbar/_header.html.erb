@@ -1,22 +1,22 @@
 
-<nav>
-  <a href="/">Food recipe</a>
+<nav class="navbar">
+  <a href="/" class="home" >Food recipe</a>
   <% if user_signed_in? %>
-    <ul >
+    <ul class="nav_bar_ul">
       <li>
-        <%= link_to 'Foods', foods_path %>
+        <%= link_to 'Foods', foods_path, class: "nav_bar_li" %>
       </li>
       <li>
-        <%= link_to 'Recipes', recipes_path %>
+        <%= link_to 'Recipes', recipes_path, class: "nav_bar_li" %>
       </li>
        <li>
-        <%= link_to 'Shopping List', general_shopping_list_index_path %>
+        <%= link_to 'Shopping List', general_shopping_list_index_path, class: "nav_bar_li" %>
       </li>
       <li>
-      <%= link_to 'Public Recipes', public_recipes_path %>
+      <%= link_to 'Public Recipes', public_recipes_path, class: "nav_bar_li" %>
       </li>
       <li>
-        <%= link_to 'Edit', edit_user_registration_path %>
+        <%= link_to 'Edit', edit_user_registration_path, class: "nav_bar_li" %>
       </li>
       <li>
         <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: false } %>
@@ -25,10 +25,10 @@
     </ul>
     <ul>
       <li>
-        <%= link_to 'Register', new_user_registration_path %>
+        <%= link_to 'Register', new_user_registration_path, class: "nav_bar_li" %>
       </li>
       <li>
-        <%= link_to 'Sign in', new_user_session_path %>
+        <%= link_to 'Sign in', new_user_session_path, class: "nav_bar_li" %>
       </li>
     </ul>
   <% end %>

@@ -1,5 +1,7 @@
-  <div id="<%= dom_id recipe %>">
-    <%= link_to recipe do %>
+  <div class=recipe-item>
+  <%= link_to recipe do %>
+  <div class="container-r" id="<%= dom_id recipe %>">
+      <div class="recipe-sec">    
       <div>
       <h4>
         <strong>Name:</strong>
@@ -12,6 +14,7 @@
         <%= recipe.description %>
       </p>
       </div>
+
       <div>
       <p>
         <strong>Public:</strong>
@@ -21,6 +24,8 @@
 
   <% end %>
   <% if can? :destroy, recipe %>
-  <%= button_to "Remove", recipe, method: :delete, data: { confirm: "Are you sure?" } %>
+  <%= button_to "Remove", recipe, method: :delete, data: { confirm: "Are you sure?" }, class: "remov1" %>
   <% end %>
+</div>
+      </div>
 </div>

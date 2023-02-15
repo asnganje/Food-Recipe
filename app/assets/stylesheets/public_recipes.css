@@ -1,0 +1,25 @@
+.recipe-public-true {
+    text-align: center;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-size: 1.3rem;
+    color: black;
+    flex-direction: column;
+}
+
+.recipe-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    border: 1px solid black;
+}
