@@ -1,2 +1,26 @@
-<div id="<%= dom_id recipe %>">
+  <div id="<%= dom_id recipe %>">
+    <%= link_to recipe do %>
+      <div>
+      <h4>
+        <strong>Name:</strong>
+        <%= recipe.name %>
+      </h4>
+    </div>
+    <div>
+      <p>
+        <strong>Description:</strong>
+        <%= recipe.description %>
+      </p>
+      </div>
+      <div>
+      <p>
+        <strong>Public:</strong>
+        <%= recipe.public %>
+      </p>
+      </div>
+
+  <% end %>
+  <% if can? :destroy, recipe %>
+  <%= button_to "Remove", recipe, method: :delete, data: { confirm: "Are you sure?" } %>
+  <% end %>
 </div>

@@ -11,6 +11,33 @@
     </div>
   <% end %>
 
+    <%= form.hidden_field :user_id, value: current_user.id %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :preparation_time %>
+    <%= form.text_field :preparation_time %>
+  </div>
+
+  <div>
+    <%= form.label :cooking_time %>
+    <%= form.text_field :cooking_time %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :public %>
+    <%= form.check_box :public %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
