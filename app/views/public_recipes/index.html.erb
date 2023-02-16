@@ -1,25 +1,27 @@
+
 <h1>Public Recipes</h1>
-  <div>
+
+  <div class="recipe-public-true">
     <% @public_recipes.each do |public_recipes| %>
     <div>
-      <div>
-        <div>
+      <div class="plan-grid">
+        <div class = "recipe-d">
           <p>
             <strong>Name:</strong>
             <%= public_recipes.name %>
           </p>
           <p>
             <strong>by: </strong>
-            <%= public_recipes.user.name%>
+            <%= public_recipes.user.name %>
           </p>
         </div>
         <div class="ar">
           <p>
-              <span>Amount of food items to buy: </span>
+              <span>Total food items to buy: </span>
               <span>&nbsp;<%= public_recipes.foods.length %></span>
           </p>
           <p>
-              <span>Total value:</span>
+              <span>Total Price:</span>
               <span>&nbsp;<%= @prices.sum %></span>
           </p>
         </div>

@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(7, 3, 3, 0.4);
+  list-style-type: none;
+  gap: 50px;
+}
+
+.nav_bar_ul {
+  list-style-type: none;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav_bar_li {
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav_bar_li:hover {
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.home {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+}

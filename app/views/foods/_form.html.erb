@@ -1,4 +1,5 @@
-<%= form_with(model: food) do |form| %>
+<div class = "container">
+<%= form_with(model: food, class: "form-food") do |form| %>
   <% if food.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(food.errors.count, "error") %> prohibited this food from being saved:</h2>
@@ -11,22 +12,22 @@
     </div>
   <% end %>
 
-   <div class="field">
+   <div class="field1">
       <%= form.label :name, style: "display: block" %>
       <%= form.text_field :name %>
     </div>
-
-    <div>
+    <br/>
+    <div class="field2">
       <%= form.label :measurement_unit %>
       <%= form.text_field :measurement_unit %>
     </div>
-
-    <div>
+    <br/>
+    <div class="field3">
       <%= form.label :quantity %>
       <%= form.text_field :quantity %>
     </div>
-
-    <div>
+    <br/>
+    <div class="field4">
       <%= form.label :price %>
       <%= form.text_field :price %>
     </div>
@@ -36,3 +37,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+</div>

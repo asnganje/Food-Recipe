@@ -1,9 +1,9 @@
 <p><%= notice %></p>
 
-<h1>Recipes</h1>
-<div>
-  <%= link_to "New recipe", new_recipe_path %>
-  <div>
+<h1 class="recipes_header">Recipes</h1>
+<div class="added-recipe">
+  <%= link_to "New recipe", new_recipe_path, class: "added-recipes" %>
+  <div id="recip">
     <% @recipes.each do |recipe| %>
       <%= render recipe %>
     <% end %>

@@ -1,4 +1,4 @@
-<div class="shopping_list">
+<div class="general-shopping_list">
     <h3>Shopping List</h3>
     <div>
       <p>
@@ -8,22 +8,16 @@
 
       <p>
         <span>Total value of food needed:</span>
-        <span>&nbsp;<%= @total %></span>
+        <span>&nbsp;<%= @missing_food_quantity_price %></span>
       </p>
-
-      <%#<p>
-        <span>Recipe: </span>
-        <span>&nbsp;%= Recipe.find_by(params[:recipe_id]).name % </span>
-      </p>%>
     </div>
 
-    <table>
+    <table id = "t-shop">
       <thead>
         <tr>
-          <th>Food</th>
-          <th>Quantity</th>
-          <th>Price</th>
-          <th>Action</th>
+          <td>Food</td>
+          <td>Quantity</td>
+          <td>Price</td>
         </tr>
       </thead>
       <tbody>
@@ -31,8 +25,7 @@
             <tr>
               <td><%= food[:name] %></td>
               <td><%= food[:quantity] %></td>
-              <td><%= food[:value] %></td>
-              <td><%= button_to "Delete", food_path(food[:id]), data: {turbo_method: :delete, turbo_confirm: 'are you sure'}, method: :delete %></td>
+              <td><%= food[:price] %></td>
             </tr>
         <% end %>
       </tbody>
