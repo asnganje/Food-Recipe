@@ -23,7 +23,7 @@ class FoodsController < ApplicationController
 
     respond_to do |format|
       if food.save
-        format.html { redirect_to foods_path, notice: 'Food was successfully created.' }
+        format.html { redirect_to foods_path }
         format.json { render :show, status: :created, location: @food }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -64,6 +64,6 @@ class FoodsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def food_params
-    params.require(:food).permit(:name, :measurement_unit, :price, :user_id)
+    params.require(:food).permit(:name, :measurement_unit, :price, :quantity, :user_id)
   end
 end

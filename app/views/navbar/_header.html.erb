@@ -1,7 +1,10 @@
 
 <nav class="navbar">
-  <a href="/" class="home" >Food recipe</a>
+  <p href="/" class="home" >Food recipe</p>
   <% if user_signed_in? %>
+  <p class="welcome"> Welcome,
+      <%= current_user.name %>
+    </p>
     <ul class="nav_bar_ul">
       <li>
         <%= link_to 'Foods', foods_path, class: "nav_bar_li" %>
@@ -14,9 +17,6 @@
       </li>
       <li>
       <%= link_to 'Public Recipes', public_recipes_path, class: "nav_bar_li" %>
-      </li>
-      <li>
-        <%= link_to 'Edit', edit_user_registration_path, class: "nav_bar_li" %>
       </li>
       <li>
         <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: false } %>
