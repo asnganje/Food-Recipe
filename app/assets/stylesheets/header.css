@@ -9,27 +9,27 @@
 }
 
 .nav_bar_ul {
-    list-style-type: none;
-    display: flex;
-    width: 60%;
-    align-items: center;
-    gap: 40px;
+  list-style-type: none;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav_bar_li {
-    padding: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    color: whitesmoke;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .nav_bar_li:hover {
-    color: aliceblue;
-    border-radius: 5px;
+  color: aliceblue;
+  border-radius: 5px;
 }
 
 .home {
-    font-size: 30px;
-    font-weight: bold;
-    color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
 }

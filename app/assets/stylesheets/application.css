@@ -14,10 +14,10 @@
  *= require_self
  */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body {
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
