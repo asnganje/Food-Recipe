@@ -1,10 +1,11 @@
+<%= javascript_include_tag "application", :async => !Rails.env.development?, "turbolinks-data-track" => true %>
 <div class="recipe-detailed">
 <p style="color: green"><%= notice %></p>
 <div class="recipe-show"> 
   <%= render @recipe %>
   <div class="link-btn-recipe">
     <button class="generate-shopping-list-btn"> Generate Shopping list </button>
-    <%= button_to "Add Ingredients" %>
+    <%= button_tag "Add ingredients", id: "add-form-button" %>
   </div>
 
   <table id="t-recipe-details">
@@ -33,8 +34,9 @@
     </tbody>
   </table>
   <br/>
-  <div class="add_recipe_food_form">
-  <%= form_with(model: @recipe_food) do |form| %>
+
+        <div class="add_recipe_food_form">
+    <%= form_with(model: @recipe_food, id: "food-form") do |form| %>
     <% if @recipe_food.errors.any? %>
       <div style="color: red">
           <h2><%= pluralize(@recipe_food.errors.count, "error") %> prohibited this recipe_food from being saved:</h2>
@@ -52,19 +54,19 @@
           <%= form.number_field :quantity %>
           <%= form.hidden_field :recipe_id, value: params[:id] %>
           <div>
-            <%= form.submit id: "create_recipe_food_btn" %>
+            <%= form.submit "Add ingredients" %>
           </div>
         </div>
-      </div>
+      
   <% end %>
+  </div>
+
+
 
   <div class="generate-shopping-list-container" id="pop-up">
       <%=form_with url: general_shopping_list_index_path, method: :get do |f| %>
         <div>
           <%= f.hidden_field :recipe_id, value: @recipe.id, required: true %>
-        </div>
-        <div>
-          <%= f.submit "Generate Shopping List"  %>
         </div>
       <% end %>
   </div>

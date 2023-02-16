@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
     @foods = current_user.foods
   end
-
+  
   # GET /recipes/1/edit
   def edit; end
 
