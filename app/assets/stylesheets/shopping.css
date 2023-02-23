@@ -1,0 +1,24 @@
+.general-shopping_list {
+  border: 2px solid red;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(21, 24, 26, 0.6);
+  color: antiquewhite;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+#t-shop {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+}
+
+#t-shop td,
+#t-shop th {
+  border: 1px solid #080808;
+  padding: 5px;
+}

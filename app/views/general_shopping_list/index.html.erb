@@ -1,0 +1,33 @@
+<div class="general-shopping_list">
+    <h3>Shopping List</h3>
+    <div>
+      <p>
+        <span>Amount of food items to buy: </span>
+        <span>&nbsp;<%= @missing_food_count %></span>
+      </p>
+
+      <p>
+        <span>Total value of food needed:</span>
+        <span>&nbsp;<%= @missing_food_quantity_price %></span>
+      </p>
+    </div>
+
+    <table id = "t-shop">
+      <thead>
+        <tr>
+          <td>Food</td>
+          <td>Quantity</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @missing_food.each do |food| %>
+            <tr>
+              <td><%= food[:name] %></td>
+              <td><%= food[:quantity] %></td>
+              <td><%= food[:price] %></td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
