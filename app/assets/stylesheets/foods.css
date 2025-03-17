@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.form-food {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+.foods_header {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  color: black;
+}
+
+#foods {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.added-food {
+  float: right;
+  box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: #8e95aa;
+  padding: 10px;
+  width: 20%;
+  align-items: center;
+  color: antiquewhite;
+}
+
+.table {
+  align-items: center;
+}
+
+#t-foods {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#t-foods td,
+#t-foods th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.field1 {
+  display: flex;
+  gap: 88px;
+}
+
+.field2 {
+  display: flex;
+  gap: 10px;
+}
+
+.field3 {
+  display: flex;
+  gap: 70px;
+}
+
+.field4 {
+  display: flex;
+  gap: 92px;
+}
