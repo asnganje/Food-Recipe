@@ -46,7 +46,7 @@
 > To get a local copy up and running, follow these steps.
 - install gems bundle i
 - setup database rails db:setup 
-- run rails server rails s.
+- run rails server OR rails s.
 - rails c
 
 ### Prerequisites
